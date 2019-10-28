@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Iterator;
 
 public class MemberList {
 	private LinkedList<Member> members = new LinkedList<Member>();
@@ -12,19 +13,19 @@ public class MemberList {
 		//TODO
 	}
 	
-	private boolean addMember(Member member) {
+	public boolean addMember(Member member) {
 		//TODO
 	}
 	
-	private boolean removeMember(String memberId) {
+	public boolean removeMember(String memberId) {
 		//TODO
 	}
 	
-	private Member findMember(String memberId) {
+	public Member findMember(String memberId) {
 		//TODO
 	}
 	
-	private Iterator getMembers() {
+	public Iterator getMembers() {
 		//TODO
 	}
 }

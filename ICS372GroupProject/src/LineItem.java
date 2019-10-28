@@ -8,11 +8,7 @@ public class LineItem {
 		//TODO
 	}
 	
-	public double calculateTotalPrice(Product product, int quantity) {
-		//TODO
-		//Put this in the constructor
-	}
-	
+
 	public Product getProduct() {
 		//TODO
 	}
@@ -20,10 +16,7 @@ public class LineItem {
 	public int getQuantity() {
 		//TODO
 	}
-	
-	public boolean setProduct(Product product) {
-		//TODO
-	}
+
 	
 	public boolean setQuantity(int quantity) {
 		//TODO
@@ -32,4 +25,9 @@ public class LineItem {
 	public double getTotalPrice() {
 		//TODO
 	}
- }
+	public double calculateTotalPrice(Product product, int quantity) {
+		//TODO
+		//Put this in the constructor
+	}
+
+}

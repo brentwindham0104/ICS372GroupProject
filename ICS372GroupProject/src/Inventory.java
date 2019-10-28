@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Iterator;
 
 public class Inventory {
 	private LinkedList<Product> productList = new LinkedList<Product>();
@@ -12,19 +13,19 @@ public class Inventory {
 		//TODO
 	}
 	
-	private boolean addProduct(Product product) {
+	public boolean addProduct(Product product) {
 		//TODO
 	}
 	
-	private boolean removeProduct(String productId) {
+	public boolean removeProduct(String productId) {
 		//TODO
 	}
 	
-	private Product findProduct(String productId) {
+	public Product findProduct(String productId) {
 		//TODO
 	}
 	
-	private Iterator getProducts() {
+	public Iterator getProducts() {
 		//TODO
 	}
 }

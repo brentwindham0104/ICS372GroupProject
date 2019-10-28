@@ -6,7 +6,7 @@ public class Product {
 	private int minimumLevel;
 	private double price;
 	
-	public Product(String name, int quantity, int minimumLevel, double price) {
+	public Product(String name, int quantity, double price, int minimumLevel) {
 		
 	}
 

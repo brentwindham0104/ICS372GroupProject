@@ -15,7 +15,7 @@ public class Transaction {
 		//TODO
 	}
 	
-	public double calculateTotal() {
+	public double calculateTotalPrice() {
 		//TODO
 	}
 	
