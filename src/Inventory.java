@@ -1,29 +1,10 @@
-import java.io.Serializable;
-import java.util.LinkedList;
 import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.List;
-/**
- * 
- * 
- * The following code is based on code from Brahma Dathan 
- * lecture notes
- *
- * The collection class for Product Objects
- * 
- *
- */
-public class Inventory{
-	private LinkedList productList = new LinkedList();
-	private static Inventory inventory;	
-	
-	/*
-     * Private constructor for singleton pattern
-     * 
-     */
-	private Inventory() {
-	}
-	
+
+public class Inventory {
+	private LinkedList<Product> productList = new LinkedList<Product>();
+	private static Inventory inventory;
+
 	/**
      * Supports the singleton pattern
      * 
@@ -31,22 +12,24 @@ public class Inventory{
      */
 	public static Inventory getInstance() {
 		if(inventory == null) {
-			return (inventory = new Inventory());
+			inventory = new Inventory();
 		}
+
+		return inventory;
 	}
 	
 	/**
-     * Checks whether a product with a given product id exists.
+     * Checks whether a product with a given product name exists.
      * 
-     * @param productId
-     *            the id of the product
+     * @param name
+     *            the name of the product
      * @return true iff the product exists
      * 
      */
-	private Product findProduct(String productId){
+	public Product findProduct(String name) {
 		for (Iterator iterator = productList.iterator(); iterator.hasNext();) {
 			Product product = (Product) iterator.next();
-			if (product.getId().equals(productId)) {
+			if (product.getName().equals(name)) {
 				return product;
 			}
 		}
@@ -60,7 +43,7 @@ public class Inventory{
      *            product id
      * @return true iff product could be removed
      */
-	private boolean removeProduct(String productId) {
+	public boolean removeProduct(String productId) {
 		Product product = findProduct(productId);
 		if (product == null) {
 			return false;
@@ -76,7 +59,7 @@ public class Inventory{
      *            the product to be added
      * @return true iff the product could be added. Currently always true
      */
-	private boolean addProduct(Product product) {
+	public boolean addProduct(Product product) {
 		productList.add(product);
 		return true;
 	}
@@ -86,7 +69,7 @@ public class Inventory{
      * 
      * @return iterator to the collection
      */
-	private Iterator getProducts() {
+	public Iterator<Product> getProducts() {
 		return productList.iterator();
 	}
 }

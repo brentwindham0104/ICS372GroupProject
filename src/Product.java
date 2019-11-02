@@ -49,6 +49,7 @@ public class Product{
 	 */
 	public boolean setProductId(String productId) {
 		this.productId = productId;
+		return true;
 	}
 	/**
 	 * Getter for name
@@ -66,6 +67,7 @@ public class Product{
 	 */
 	public boolean setName(String name) {
 		this.name = name;
+		return true;
 	}
 	/**
 	 * Getter for quantity
@@ -83,6 +85,7 @@ public class Product{
 	 */
 	public boolean setQuantity(int quantity) {
 		this.quantity = quantity;
+		return true;
 	}
 	/**
 	 * Getter for minimumLevel
@@ -100,6 +103,7 @@ public class Product{
 	 */
 	public boolean setMinimumLevel(int minimumLevel) {
 		this.minimumLevel = minimumLevel;
+		return true;
 	}
 	/**
 	 * Getter for price
@@ -117,5 +121,6 @@ public class Product{
 	 */
 	public boolean setPrice(double price) {
 		this.price = price;
-	}	
+		return true;
+	}
 }

@@ -23,14 +23,11 @@ public class Member {
 	 * @param feePaid The fee paid by the member.
 	 */
 	public Member(String name, String address, int phoneNumber, double feePaid) {
-		// TODO Auto-generated constructor stub
 		this.name = name;
 		this.address = address;
 		this.phoneNumber = phoneNumber;
-		this.feePaid = feePaid;
 		this.joinDate = new GregorianCalendar();
-		this.memberId = "m" + counter;
-		counter++;
+		this.feePaid = feePaid;
 	}
 
 	/**
@@ -139,9 +136,5 @@ public class Member {
 	public boolean setJoinDate(GregorianCalendar joinDate) {
 		this.joinDate = joinDate;
 		return true;
-	}
-	
-	
-	
-	
+	}	
 }

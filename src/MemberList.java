@@ -7,7 +7,7 @@ import java.util.LinkedList;
  * This implements the collection of members.
  */
 public class MemberList {
-	private LinkedList<Member> members = new LinkedList<Member>();
+	private LinkedList<Member> members;
 	private static MemberList memberList;
 	
 	/**
@@ -21,7 +21,8 @@ public class MemberList {
 			return (memberList = new MemberList());
 		} else {
 			return memberList;
-		}	}
+		}	
+	}
 	
 	/**
 	 * Private constructor for the memberlist object
@@ -78,7 +79,7 @@ public class MemberList {
 	 * @return Returns an iterator object for the memberlist.
 	 */
 	private Iterator getMembers() {
-		//TODO
+		
 		return members.iterator();
 	}
 }
